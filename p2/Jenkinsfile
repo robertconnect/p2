@@ -20,4 +20,12 @@ pipeline {
             }
         }
     }
+
+
+    post {
+        always {
+            archiveArtifacts artifacts: "p2\\p2\\src\\*pdf", fingerprint: true
+        }
+    }
+
 }
