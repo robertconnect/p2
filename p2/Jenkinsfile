@@ -15,7 +15,7 @@ pipeline {
         stage('Action') {
             steps {
                 bat '''
-                dir
+                dir p2
                 '''
             }
         }
