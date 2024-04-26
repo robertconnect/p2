@@ -15,9 +15,7 @@ pipeline {
         stage('Action') {
             steps {
                 bat '''
-                dir
-                cd ..
-                dir
+                cd src & job.bat
                 '''
             }
         }
