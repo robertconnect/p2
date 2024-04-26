@@ -12,5 +12,12 @@ pipeline {
                 echo 'Hello World (2)'
             }
         }
+        stage('Action') {
+            steps {
+                sh '''
+                dir
+                '''
+            }
+        }
     }
 }
