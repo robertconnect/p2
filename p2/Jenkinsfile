@@ -24,7 +24,7 @@ pipeline {
 
     post {
         always {
-            archiveArtifacts artifacts: "p2\\p2\\src\\*pdf", fingerprint: true
+            archiveArtifacts artifacts: "p2\\src\\report.pdf", fingerprint: true
         }
     }
 
